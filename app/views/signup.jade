@@ -1,0 +1,26 @@
+html
+ head
+    title= title
+    link(href='/css/main.css', rel='stylesheet')
+body
+    h1= title
+    div
+        form(name='signup', method='POST', action='user')
+            div
+                lable(fro='firstName') First name :
+                input(name='firstName', type='text', placeholder='First name')
+            div
+                lable(for='lastName') Last name :
+                input(name='lastName', type='text', placeholder='Last Name')
+            div
+                lable(for='username') Username :
+                input(name='username', type='text', placeholder='Username')
+             div
+                lable(for='email') Email :
+                input(name='email', type='email', placeholder='youremail@email.com')
+             div
+                lable(for='password') Password :
+                input(name='password', type='password', placeholder='Password')
+            div
+                input(type='submit', value='Sing up')
+        
